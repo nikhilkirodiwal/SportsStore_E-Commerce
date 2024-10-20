@@ -1,0 +1,776 @@
+body {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  background-color: #f4f4f4;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+/* nav section */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f4f4f4;
+  /* background: transparent; */
+  z-index: 1000;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0.5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-left .logo {
+  width: 70px;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+
+.nav-right {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.nav-right-page {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-right-page li {
+  margin: 0;
+}
+
+.nav-right-page a {
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-right-page a:hover {
+  color: #bdec2f;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  background-color: #bdec2f;
+  border: none;
+  padding: 12px 24px;
+  /* border-radius: 5px; */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  font-weight: 700;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: #d0ec7e;
+}
+
+.btn:focus {
+  outline: 2px solid #000;
+}
+
+/* hero section */
+
+.hero {
+  padding: 150px;
+}
+
+.hero-heading h1 {
+  font-size: 52px;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  font-weight: 750;
+  line-height: 1.1;
+  margin-bottom: 80px;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero-content-image {
+  height: 580px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.hero-content-image img {
+  width: 482px;
+  height: auto;
+}
+
+.hero-content p {
+  margin: 0;
+  line-height: 28px;
+}
+
+/* partner section */
+
+.partner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(230, 230, 230);
+  padding: 30px 150px;
+  margin-bottom: 150px;
+}
+
+.partner h2 {
+  font-size: 40px;
+  font-weight: 750;
+}
+
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+/* products setion */
+
+.product {
+  margin-bottom: 100px;
+  padding: 0 150px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.product-others {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.product1,
+.product2,
+.product3 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image {
+  position: relative;
+  object-fit: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+.product-text1 {
+  position: absolute;
+  font-size: 50px;
+  width: 522px;
+  height: 730px;
+  color: #fff;
+  font-weight: 900;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.product-text2 {
+  position: absolute;
+  font-size: 50px;
+  width: 522px;
+  height: 340px;
+  color: #fff;
+  font-weight: 900;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.product1:hover .product-text1 {
+  opacity: 1;
+}
+
+.product2:hover .product-text2 {
+  opacity: 1;
+}
+
+.product3:hover .product-text2 {
+  opacity: 1;
+}
+
+/* trending section */
+
+.trending {
+  padding: 0 150px;
+  margin-bottom: 150px;
+}
+
+.trending-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.trending-desc h3 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: start;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+.trending-items {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+justify-content: center;
+  align-items: center;
+  gap: 70px;  
+}
+
+.item {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  font-size: 22px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.item .item-image {
+  width: 360px;
+  height: auto;
+  object-fit: cover;
+  background-position: center;
+}
+
+.item:hover {
+  scale: 1.02;
+}
+
+.item-desc {
+  margin: 30px 30px;
+  margin-bottom: 0px;
+}
+
+.item-desc p {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.item-desc p b {
+  font-size: 24px;
+}
+
+.item-desc p s {
+  color: #5a5a5a;
+  font-size: 16px;
+}
+
+.item-desc p span {
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+.productQuantityElement {
+  margin: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.productQuantityElement p {
+  font-size: 20px;
+  line-height: 10px;
+}
+
+.stockElement {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+
+  & button {
+    cursor: pointer;
+  }
+}
+
+.add-to-cart-button {
+  border-radius: 6px;
+  margin: 15px auto;
+  padding: 8px 15px;
+  background-color: #2a2c30;
+  color: #fff;
+  font-size: 20px;
+
+  &:hover {
+    background-color: #f7f7f7;
+    color: #2a2c30;
+    cursor: pointer;
+  }
+}
+
+
+/* sports equipment */
+
+.sports-equip {
+  padding: 50px 0 50px 150px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  background-color: #000;
+  color: #fff;
+}
+
+.sports-equip-desc h4 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  line-height: 60px;
+}
+
+.sports-equip-desc p {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.sports-equip-image img {
+  width: 700px;
+  height: 600px;
+}
+
+/* about section */
+
+.about {
+  padding: 50px 150px;
+}
+
+.about-desc {
+  margin-bottom: 80px;
+}
+.about-desc h5 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 10px;
+}
+
+.about-desc p {
+  margin-top: -30px;
+  text-align: center;
+  line-height: 24px;
+  color: #1f1f1fc5;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+.about-heading {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.about-heading-info {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  margin-bottom: 50px;
+  color: #1f1f1fc5;
+}
+
+/* testimonials section */
+
+.testimonials {
+  margin-bottom: 100px;
+  padding: 50px 150px;
+  background-color: rgb(230, 230, 230);
+}
+
+.testimonials h6 {
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.testimonials-card {
+  padding: 20px;
+  border: 1px solid #000;
+  background-color: #f4f4f4;
+}
+
+.testimonials-text {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.testimonials-user {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials-name {
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.testimonials-card:hover {
+  scale: 1.02;
+}
+
+/* contact us section */
+
+.contact {
+  padding: 50px 150px;
+  background-color: #000;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.contact-desc {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+}
+
+.contact-desc .logo {
+  width: 100px;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+
+.contact-desc p {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* footer section */
+
+.footer-distributed {
+  padding: 50px 150px;
+  background: #000;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  border-top: 1px solid #666;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+.footer-distributed img {
+  width: 80px;
+}
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-links .link:hover {
+  color: #d0ec7e;
+}
+
+.footer-links .link-1:hover {
+  color: #d0ec7e;
+}
+
+.footer-distributed .footer-company-name {
+  color: #f6f6f6;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+  line-height: 40px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: lightseagreen;
+  text-decoration: none;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.footer-distributed .footer-icons img {
+  width: 50px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1200px) {
+  .nav {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .partner {
+    padding: 30px 50px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .product {
+    grid-template-columns: 1fr;
+    padding: 0 30px;
+  }
+
+  .hero {
+    padding: 100px 30px;
+  }
+
+  .trending-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sports-equip {
+    grid-template-columns: 1fr;
+    padding: 50px 30px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-distributed {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav {
+    padding: 0.5rem 1rem;
+  }
+
+  .hero-heading h1 {
+    font-size: 40px;
+  }
+
+  .product {
+    gap: 20px;
+  }
+
+  .testimonials-card {
+    padding: 15px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-desc p {
+    font-size: 14px;
+  }
+
+  .footer-distributed {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .hero-heading h1 {
+    font-size: 32px;
+  }
+
+  .nav-right-page a {
+    font-size: 18px;
+  }
+
+  .item {
+    font-size: 20px;
+  }
+
+  .sports-equip-desc h4 {
+    font-size: 36px;
+  }
+
+  .about-desc h5 {
+    font-size: 32px;
+  }
+
+  .testimonials h6 {
+    font-size: 36px;
+  }
+
+  .footer-distributed {
+    text-align: center;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    width: 100%;
+    display: block;
+  }
+}

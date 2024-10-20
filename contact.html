@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./style/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    
+    <!-- Header Section -->
+    <header>
+      <nav class="nav">
+        <div class="nav-left">
+          <a href="index.html">
+            <img
+              class="logo"
+              src="./images/Sports-logo.png"
+              alt="Sports Logo"
+            />
+          </a>
+        </div>
+        <div class="nav-right">
+          <ul class="nav-right-page">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="nav-buttons">
+            <a href="product.html"><button class="btn">SHOP NOW</button></a>
+            <a href="cart.html">
+              <a href="cart.html">
+                <button class="btn">Cart</button>
+              </a>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <div class="contact">
+      <div class="contact-info">
+        <div class="contact-info-text">
+          <h1>Get In Touch</h1>
+          <p>
+            We’re here to help and would love to hear from you! Whether you have
+            questions about our products, need technical support, or simply want
+            to learn more about what we do, feel free to reach out to us using
+            the contact options below:
+          </p>
+        </div>
+        <img src="./images/sports5.jpg" alt="sports image" />
+      </div>
+    </div>
+
+    <div class="connect">
+      <div class="email">
+        <p><b>&#9993; Email Address</b></p>
+        <p>sports@gmail.com</p>
+      </div>
+      <div class="phone-number">
+        <p><b>&#9743; Phone Number</b></p>
+        <p>+91 111 - 111 - 1111</p>
+      </div>
+      <div class="chat">
+        <p><b>&#9793; Chat Support</b></p>
+        <p>Talk with a Support Agent</p>
+      </div>
+      <div class="support">
+        <p><b>&#9745; Customer Support</b></p>
+        <p>
+          Monday - Friday <br />
+          9:00 AM - 5:00 PM
+        </p>
+      </div>
+    </div>
+
+    <div class="contact-container">
+      <div class="contact-form">
+        <h1>Get In Touch</h1>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+        <div id="responseMessage" class="response-message"></div>
+      </div>
+      <div class="contact-image">
+        <img src="./images/sports6.jpg" alt="Contact Image" />
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <img src="./images/Sports-logo.png" alt="website logo" />
+
+        <p class="footer-links">
+          <a href="index.html" class="link-1">Home</a>
+          <a href="product.html" class="link">Product</a>
+          <a href="about.html" class="link">About</a>
+          <a href="contact.html" class="link">Contact</a>
+        </p>
+
+        <p class="footer-company-name">
+          Copyright © 2024 Sports Equipment Store
+        </p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <p><span>&#9745; 444 S. Cedros Ave</span> Alwar, Rajasthan</p>
+        </div>
+
+        <div>
+          <p>&#9743; +91 444 - 444 - 4444</p>
+        </div>
+
+        <div>
+          <p>
+            <a href="nikhilkirodiwal111@gmail.com">
+              &#9993; sports@company.com
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          At SPORTS, we specialize in crafting top-tier sports equipment that
+          blends innovation with durability. Our extensive range includes
+          everything from cutting-edge athletic gear to essential fitness
+          accessories, all designed to elevate your performance.
+        </p>
+      </div>
+      <div class="footer-icons">
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img src="./images/instagram.png" alt="Instagram"
+        /></a>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img src="./images/facebook.png" alt="Facebook"
+        /></a>
+        <a href="https://x.com/" target="_blank"
+          ><img src="./images/twitter.png" alt="Twitter"
+        /></a>
+        <a href="https://www.linkedin.com/" target="_blank"
+          ><img src="./images/linkedin.png" alt="Linkdin"
+        /></a>
+        <a href="https://github.com/" target="_blank"
+          ><img src="./images/github.png" alt="Github"
+        /></a>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.getElementById("contactForm");
+        const responseMessage = document.getElementById("responseMessage");
+
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
+          responseMessage.textContent =
+            "Thank you for your message! We will get back to you soon.";
+          responseMessage.classList.remove("error");
+          responseMessage.classList.add("success");
+          form.reset();
+        });
+      });
+    </script>
+  </body>
+</html>

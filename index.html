@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav class="nav">
+        <div class="nav-left">
+          <a href="index.html">
+            <img
+              class="logo"
+              src="./images/Sports-logo.png"
+              alt="Sports Logo"
+            />
+          </a>
+        </div>
+        <div class="nav-right">
+          <ul class="nav-right-page">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="nav-buttons">
+            <a href="product.html"><button class="btn">SHOP NOW</button></a>
+            <a href="cart.html">
+              <button class="btn">Cart</button>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-heading">
+        <h1>Gear up for Victory! Explore our Selection of Sports Equipment</h1>
+      </div>
+      <div class="hero-image">
+        <img src="./images/hero1.jpg" alt="Hero Image" />
+        <div class="hero-content-image">
+          <div class="hero-content">
+            <p>
+              Whether you're hitting the field or the gym, our top-quality
+              sports gear and apparel are designed to boost your performance and
+              help you achieve your goals. Explore our latest collection of
+              high-performance equipment and stylish, durable clothing tailored
+              to your needs.
+            </p>
+            <a href="product.html">
+              <button class="btn">Shop Now</button>
+            </a>
+          </div>
+          <img src="./images/hero2.jpg" alt="Hero Image" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Partner Section -->
+    <div class="partner">
+      <h2>Our Sponsors and Collaborators</h2>
+      <div class="partner-logos">
+        <img src="./images/spon1.png" alt="partner-logos" />
+        <img src="./images/spon2.png" alt="partner-logos" />
+        <img src="./images/spon1.png" alt="partner-logos" />
+        <img src="./images/spon2.png" alt="partner-logos" />
+      </div>
+    </div>
+
+    <!-- Product Section -->
+    <div class="product">
+      <a href="sports.html">
+        <div class="product1">
+          <img class="product-image" src="./images/prod1.jpg" alt="product" />
+          <p class="product-text1">SPORTS EQUIPMENTS</p>
+        </div>
+      </a>
+      <div class="product-others">
+        <a href="gym.html">
+          <div class="product2">
+            <img class="product-image" src="./images/prod2.jpg" alt="product" />
+            <p class="product-text2">GYM TOOLS</p>
+          </div>
+        </a>
+        <a href="clothes.html">
+          <div class="product3">
+            <img class="product-image" src="./images/prod3.jpg" alt="product" />
+            <p class="product-text2">SPORTS CLOTHS</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Trending Section -->
+    <div class="trending">
+      <div class="trending-desc">
+        <h3>Trending Now</h3>
+        <a href="product.html">
+          <button class="btn">VIEW ALL</button>
+        </a>
+      </div>
+      <div class="trending-items">
+        <!-- Sample Item -->
+        <div
+          class="item"
+          data-id="1"
+          data-name="Balance Trainer"
+          data-price="450"
+        >
+          <img class="item-image" src="./images/item1.jpg" alt="item1" />
+          <div class="item-desc">
+            <p>Equipment</p>
+            <p><b>Balance Trainer</b></p>
+            <p><s>&#8377;500</s><span>&#8377;450</span></p>
+          </div>
+          <div class="productQuantityElement">
+            <p class="productProperty">Quantity(Pieces)</p>
+            <div class="stockElement">
+              <button class="cartDecrement">-</button>
+              <p class="productQuantity">1</p>
+              <button class="cartIncrement">+</button>
+            </div>
+          </div>
+          <button class="add-to-cart-button">
+            <i class="ri-shopping-cart-2-line"></i> Add To Cart
+          </button>
+        </div>
+
+        <div class="item" data-id="2" data-name="Basketball" data-price="900">
+          <img class="item-image" src="./images/item2.jpg" alt="item1" />
+          <div class="item-desc">
+            <p>Equipment</p>
+            <p><b>Basketball</b></p>
+            <p><s>&#8377;1000</s><span>&#8377;900</span></p>
+          </div>
+          <div class="productQuantityElement">
+            <p class="productProperty">Quantity(Pieces)</p>
+            <div class="stockElement">
+              <button class="cartIncrement">+</button>
+              <p class="productQuantity">1</p>
+              <button class="cartDecrement">-</button>
+            </div>
+          </div>
+          <button class="add-to-cart-button">
+            <i class="ri-shopping-cart-2-line"></i> Add To Cart
+          </button>
+        </div>
+
+        <div
+          class="item"
+          data-id="3"
+          data-name="Ice Skiing Shoes"
+          data-price="1800"
+        >
+          <img class="item-image" src="./images/item3.jpg" alt="item1" />
+          <div class="item-desc">
+            <p>Equipment</p>
+            <p><b>Ice Skiing Shoes</b></p>
+            <p><s>&#8377;2000</s><span>&#8377;1800</span></p>
+          </div>
+          <div class="productQuantityElement">
+            <p class="productProperty">Quantity(Pieces)</p>
+            <div class="stockElement">
+              <button class="cartIncrement">+</button>
+              <p class="productQuantity">1</p>
+              <button class="cartDecrement">-</button>
+            </div>
+          </div>
+          <button class="add-to-cart-button">
+            <i class="ri-shopping-cart-2-line"></i> Add To Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sports Equipment -->
+    <div class="sports-equip">
+      <div class="sports-equip-desc">
+        <h4>Score Big Savings on Premium Sports Equipment</h4>
+        <p>
+          Proper equipment is essential for effective training, gameplay, and
+          injury prevention. Innovations and advancements in sports equipment
+          often lead to better performance and comfort. Whether for professional
+          athletes or recreational enthusiasts, having the right equipment is
+          crucial for success and enjoyment in sports.
+        </p>
+        <a href="product.html">
+          <button class="btn">VIEW DEALS</button>
+        </a>
+      </div>
+      <div class="sports-equip-image">
+        <img src="./images/sports1.jpg" alt="sports image" />
+      </div>
+    </div>
+    
+    <img style="width: 100%" src="./images/sports2.jpg" alt="sports image" />
+
+    <!-- About Section -->
+    <div class="about">
+      <div class="about-desc">
+        <h5>Unleash Your Potential with High-<br />Quality Sport Equipment</h5>
+        <p>
+          Sports encompass a range of physical activities and competitions that
+          require skill, strategy, and adherence to rules,<br />
+          and can be played individually or in teams. They offer numerous
+          benefits, including improved physical health,<br />
+          mental well-being, and social skills.
+        </p>
+      </div>
+      <div class="about-content">
+        <div class="about-left">
+          <p class="about-heading">Durable</p>
+          <p class="about-heading-info">
+            Sports equipment durability relies on the quality of materials and
+            design, with premium materials.
+          </p>
+          <p class="about-heading">Performance Enhancing</p>
+          <p class="about-heading-info">
+            Performance durability refers to how well equipment maintains its
+            effectiveness and reliable.
+          </p>
+          <p class="about-heading">Premium Quality</p>
+          <p class="about-heading-info">
+            Premium quality signifies superior craftsmanship and materials,
+            leading to enhanced durability and aesthetics.
+          </p>
+        </div>
+        <div class="about-center">
+          <img src="./images/about.jpg" alt="about image" />
+        </div>
+        <div class="about-right">
+          <p class="about-heading">Versatile Equipment</p>
+          <p class="about-heading-info">
+            Versatile equipment is designed to perform multiple functions or
+            adapt to various exercises to maximizing its utility.
+          </p>
+          <p class="about-heading">Safety</p>
+          <p class="about-heading-info">
+            Safety in equipment ensures user protection through features like
+            stability, ergonomic design, quality materials.
+          </p>
+          <p class="about-heading">Comfertable Designs</p>
+          <p class="about-heading-info">
+            A comfortable design incorporates ergonomic features to enhance user
+            experience and reduce strain.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="testimonials">
+      <h6>Costumer Testimonials</h6>
+      <div class="cards">
+        <div class="testimonials-card">
+          <p class="testimonials-text">
+            I purchased my first pair of sports equipment from Sports Equipment
+            Store and they were absolutely fantastic! I am so grateful for their
+            commitment to quality and customer satisfaction.
+          </p>
+          <div class="testimonials-user">
+            <img
+              class="testimonials-image"
+              src="./images/user1.png"
+              alt="testimonial-user1"
+            />
+            <p class="testimonials-name">John Doe</p>
+          </div>
+        </div>
+        <div class="testimonials-card">
+          <p class="testimonials-text">
+            This equipment has transformed my fitness routine. The durability
+            and ease of use are outstanding, and the comfort level is unmatched.
+            I highly recommend it to anyone looking for reliable and effective
+            gear.
+          </p>
+          <div class="testimonials-user">
+            <img
+              class="testimonials-image"
+              src="./images/user2.png"
+              alt="testimonial-user2"
+            />
+            <p class="testimonials-name">Mark Henry</p>
+          </div>
+        </div>
+        <div class="testimonials-card">
+          <p class="testimonials-text">
+            I've been using this equipment for six months, and it's exceeded all
+            my expectations. The build quality is exceptional, and it's
+            incredibly comfortable to use. It's made a noticeable difference in
+            my workouts.3
+          </p>
+          <div class="testimonials-user">
+            <img
+              class="testimonials-image"
+              src="./images/user1.png"
+              alt="testimonial-user1"
+            />
+            <p class="testimonials-name">John Doe</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div class="contact">
+      <div class="contact-desc">
+        <a href="about.html">
+          <img class="logo" src="./images/Sports-logo.png" alt="website logo" />
+        </a>
+        <p>
+          If you have any questions or need assistance with your purchase,
+          please don't hesitate to reach out to our customer support team.
+        </p>
+        <a href="contact.html">
+          <button class="btn">Contact Us</button>
+        </a>
+      </div>
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113191.98042668823!2d76.5639739987999!3d27.55476964603571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3972998fa7e65df3%3A0x38cebba39ee426f2!2sAlwar%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1723540705624!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <img src="./images/Sports-logo.png" alt="website logo" />
+
+        <p class="footer-links">
+          <a href="index.html" class="link-1">Home</a>
+          <a href="product.html" class="link">Product</a>
+          <a href="about.html" class="link">About</a>
+          <a href="contact.html" class="link">Contact</a>
+        </p>
+
+        <p class="footer-company-name">
+          Copyright © 2024 Sports Equipment Store
+        </p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <p><span>&#9745; 444 S. Cedros Ave</span> Alwar, Rajasthan</p>
+        </div>
+
+        <div>
+          <p>&#9743; +91 444 - 444 - 4444</p>
+        </div>
+
+        <div>
+          <p>
+            <a href="nikhilkirodiwal111@gmail.com">
+              &#9993; sports@company.com
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          At SPORTS, we specialize in crafting top-tier sports equipment that
+          blends innovation with durability. Our extensive range includes
+          everything from cutting-edge athletic gear to essential fitness
+          accessories, all designed to elevate your performance.
+        </p>
+      </div>
+      <div class="footer-icons">
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img src="./images/instagram.png" alt="Instagram"
+        /></a>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img src="./images/facebook.png" alt="Facebook"
+        /></a>
+        <a href="https://x.com/" target="_blank"
+          ><img src="./images/twitter.png" alt="Twitter"
+        /></a>
+        <a href="https://www.linkedin.com/" target="_blank"
+          ><img src="./images/linkedin.png" alt="Linkdin"
+        /></a>
+        <a href="https://github.com/" target="_blank"
+          ><img src="./images/github.png" alt="Github"
+        /></a>
+      </div>
+    </footer>
+
+    <script>
+      // Function to add a product to the cart
+      function addToCart(product) {
+        const existingCartItems =
+          JSON.parse(localStorage.getItem("cartItems")) || [];
+        const existingItem = existingCartItems.find(
+          (item) => item.id === product.id
+        );
+
+        if (existingItem) {
+          existingItem.quantity += product.quantity; // Update quantity if already in cart
+        } else {
+          existingCartItems.push(product); // Add new product to the cart
+        }
+
+        localStorage.setItem("cartItems", JSON.stringify(existingCartItems));
+        alert(`${product.name} added to the cart!`);
+      }
+
+      // Attach event listeners to all "Add to Cart" buttons
+      document.querySelectorAll(".add-to-cart-button").forEach((button) => {
+        button.addEventListener("click", function () {
+          const itemElement = this.closest(".item");
+
+          // Get product details from the HTML data attributes
+          const product = {
+            id: parseInt(itemElement.getAttribute("data-id")),
+            name: itemElement.getAttribute("data-name"),
+            price: parseInt(itemElement.getAttribute("data-price")),
+            image: itemElement.querySelector(".item-image").src,
+            category: "Equipment", // Assuming the category is 'Equipment'
+            quantity: parseInt(
+              itemElement.querySelector(".productQuantity").textContent
+            ),
+          };
+
+          // Call the addToCart function with the product data
+          addToCart(product);
+        });
+      });
+
+      // Increment and Decrement Quantity within the Trending Section
+      document.querySelectorAll(".cartIncrement").forEach((button) => {
+        button.addEventListener("click", function () {
+          const quantityElement =
+            this.closest(".stockElement").querySelector(".productQuantity");
+          let quantity = parseInt(quantityElement.textContent);
+          quantity++;
+          quantityElement.textContent = quantity;
+        });
+      });
+
+      document.querySelectorAll(".cartDecrement").forEach((button) => {
+        button.addEventListener("click", function () {
+          const quantityElement =
+            this.closest(".stockElement").querySelector(".productQuantity");
+          let quantity = parseInt(quantityElement.textContent);
+          if (quantity > 1) {
+            quantity--;
+            quantityElement.textContent = quantity;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
+
